@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <script src="js/request.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/main.js"></script>
+    <title>用户管理系统-注册</title>
+</head>
+<body>
+<header>
+    <ul>
+        <li style="float: left"><p>用户管理系统</p></li>
+        <li style="float: right">
+            <a login="" href="index.html">登录</a>
+        </li>
+    </ul>
+</header>
+<div class="main-reg-div">
+    <form onsubmit="">
+        <p>注册一个账户</p>
+        <label for="username">输入用户名</label>
+        <input type="text" id="username"/>
+        <label for="email">输入你的邮箱</label>
+        <input type="text" id="email"/>
+        <label for="phone">输入你的手机号</label>
+        <input type="text" id="phone"/>
+        <label for="sex">选择你的性别</label>
+        <select id="sex">
+            <option value="-1">未选择</option>
+            <option value="0">男性</option>
+            <option value="1">女性</option>
+        </select>
+        <label for="password">设置一个密码</label>
+        <input type="password" id="password"/>
+        <label for="password2">再次输入这个密码</label>
+        <input type="password" id="password2"/>
+        <br/>
+        <input type="checkbox" id="document"/>
+        <label for="document" style="text-align: right;">同意我们的<a href="#">用户协议</a></label>
+        <a id="button" onclick="reg_check();">立即注册</a>
+    </form>
+
+</div>
+<footer>
+
+</footer>
+</body>
+</html>

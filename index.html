@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户管理系统-主页</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <script src="js/request.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cookie.min.js"></script>
+    <script type="text/javascript">
+        reqwest({
+            url: 'php/query.php?operate=check_cookie',
+            method: 'get',
+            success: function(resp){
+                if(resp==""){
+                    resp="{}";
+                }
+                eval("var d="+resp+";");
+                if(d.result=="success"){
+                    window.location='home';
+                }else{
+                    window.onload=function(){
+                        q("#body").style.display="";
+                    };
+                    q("#body").style.display="";
+                }
+            }
+        });
+    </script>
+
+</head>
+<body id="body" style="display:none;">
+<header>
+    <ul>
+        <li style="float: left"><p>用户管理系统</p></li>
+        <li style="float: right">
+            <a href="reg.html">注册</a>
+        </li>
+    </ul>
+</header>
+<div class="main-login-div">
+    <form onsubmit="">
+        <p>登录您的账户</p>
+        <label for="username">输入用户名</label>
+        <input type="text" id="username"/>
+        <label for="password">输入密码</label>
+        <input type="password" id="password"/>
+        <input type="checkbox" id="remember"/>
+        <label for="remember">记住我</label>
+        <br/>
+        <a id="button" onclick="login_check();">登录</a>
+    </form>
+
+</div>
+</body>
+</html>

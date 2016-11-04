@@ -1,0 +1,217 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: coral;
+    height: 60px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: antiquewhite;
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+header>ul{
+    width:90%;
+    min-width: 500px;
+    max-width: 1170px;
+    /*display:inline-flex;*/
+    vertical-align: middle;
+    height:60px;
+    margin:0 0 0 auto;
+}
+header>ul>li{
+    display: inline-block;
+    margin:0 20px;
+}
+header>ul>li>p,
+header>ul>li>a{
+    height:60px;
+    line-height: 60px;
+}
+header>ul>li>p{
+    font-size: 24px;
+    /*color:white;*/
+}
+.main-reg-div{
+    margin-top:80px;
+}
+.main-login-div>form>input[type="text"],
+.main-login-div>form>input[type="password"],
+.main-reg-div>form>input[type="text"],
+.main-reg-div>form>input[type="password"],
+.main-reg-div>form>select{
+    border: 0;
+    border-bottom: 1px solid coral;
+    background-color: transparent;
+    display: block;
+    margin:5px 0;
+    width:200px;
+    -moz-appearance: none;
+    transition: all .5s ease-in-out;
+    height:30px;
+}
+.main-login-div>form>input[type="text"]:focus,
+.main-login-div>form>input[type="password"]:focus,
+.main-reg-div>form>input[type="text"]:focus,
+.main-reg-div>form>input[type="password"]:focus,
+.main-reg-div>form>select:focus{
+    background-color: #b6b6b6;
+}
+form>input[type="checkbox"]{
+    margin:2px;
+}
+.main-reg-div>form{
+    width:200px;
+    margin:0 auto;
+}
+.main-reg-div>form>p{
+    font-size: 24px;
+    padding:20px;
+}
+.main-login-div>form>a,
+.main-reg-div>form>a{
+    border: 0;
+    background-color: coral;
+    border-radius: 4px;
+    width:120px;
+    height:30px;
+    margin:20px 40px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    line-height: 30px;
+}
+.main-login-div>form>a:hover,
+.main-login-div>form>a:focus
+.main-reg-div>form>a:hover,
+.main-reg-div>form>a:focus{
+    opacity:0.8;
+}
+.main-login-div,.main-result-div{
+    margin-top:80px;
+}
+.main-login-div>form{
+    width:200px;
+    margin:0 auto;
+}
+.main-result-div>ul{
+    width:300px;
+    margin:0 auto;
+}
+.main-login-div>form>p,.main-result-div>ul p{
+    font-size: 24px;
+    padding:20px;
+    text-align: center;
+}
+.main-result-div{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /*width:300px;
+    height:200px;*/
+
+}
+.main-result-div>ul>li>a{
+    width:300px;
+    text-align: center;
+    display: inline-block;
+    margin:10px 0;
+}
+.main-edit-div{
+    margin-top:80px;
+}
+.main-edit-div>div.myself>p{
+    font-size: 24px;
+    padding:20px 0;
+    margin-left:20px;
+    display:inline-block;
+}
+.main-edit-div>div.myself>button{
+    display:inline-block;
+    float:right;
+    margin:24px;
+    border:0;
+    height:30px;
+    width:50px;
+    background-color: lawngreen;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.main-edit-div>div.myself>button:hover{
+    opacity: 0.8;
+}
+.main-edit-div>div.myself{
+    width:600px;
+    margin:0 auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.main-edit-div>div.myself>ul{
+    margin-left:30px;
+}
+.main-edit-div>div.myself>ul>li{
+    height:100px;
+    border:1px ;
+}
+.main-edit-div>div.myself>ul>li>input{
+    border:1px lawngreen solid;
+    width:150px;
+    height:30px;
+    border-radius: 4px;
+    background-color: white;
+}
+.main-edit-div>div.myself>ul>li>select{
+    -moz-appearance: initial;
+    border:1px lawngreen solid;
+    width:150px;
+    height:30px;
+    margin-left:-3px;
+    border-radius: 4px;
+    background-color: white ;
+}
+.main-edit-div>div.myself>ul>li>input[disabled]{
+    border:0;
+    background-color: transparent;
+
+
+}
+.main-edit-div>div.myself>ul>li>select[disabled]{
+    -moz-appearance: none;
+    border:0;
+    background-color: transparent;
+}
+
+.main-edit-div>div.myself>ul>li>label{
+    border:0;
+    background-color: transparent;
+    width:90px;
+    display: inline-block;
+    color:#b6b6b6;
+    margin-left:10px;
+}
+.main-edit-div>div.myself>ul>li>span{
+    font-size: 18px;
+}
